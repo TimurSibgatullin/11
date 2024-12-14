@@ -22,6 +22,7 @@ public class Game {
         this.finishY = finishY;
         this.players = players;
         this.steps = 0;
+        Entity.setFieldSize(fieldWidth, fieldHeigth);
     }
 
     public int getSteps() {

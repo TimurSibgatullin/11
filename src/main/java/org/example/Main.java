@@ -4,8 +4,6 @@ import org.example.model.*;
 
 public class Main {
     public static void main(String[] args) {
-        int fieldWidth = 1000;
-        int fieldHeigth = 1000;
         int finishFieldWight = 10;
         int finishFieldHeight = 10;
         int finishX = 495;
@@ -17,9 +15,7 @@ public class Main {
         entities[2] = new Ant(0, 0);  // муравей лидирует почти всегда, после нечто
         entities[3] = new Something(0, 0); // нечто со случайным перемещением -- нарушает баланс
 
-        Entity.setFieldSize(fieldWidth, fieldHeigth);
-
-        Game game = new Game(fieldWidth, fieldHeigth,
+        Game game = new Game(1000, 1000,
                 finishFieldWight, finishFieldHeight,
                 finishX, finishY, entities);
 
